@@ -1,0 +1,85 @@
+source_list:
+  version: "0.2"
+
+  tier_1_authoritative:
+    academic_taxonomies:
+      - name: "Brignull original catalogue (2010)"
+        role: "Historical foundation for modern deceptive-pattern terminology."
+
+      - name: "Gray et al. three-tier ontology"
+        role: "Academic synthesis used as the higher-level classification backbone."
+
+      - name: "50 Shades of Deceptive Patterns (ACM Web Conference 2025)"
+        role: "Large-scale taxonomy and security/privacy-relevant research."
+
+    regulatory_sources:
+      - name: "FTC Staff Report on Dark Patterns (2022)"
+        role: "Regulatory examples and documented deceptive practices."
+
+      - name: "CNIL deceptive-design typology"
+        role: "Privacy-focused regulatory framing and examples."
+
+      - name: "EU Digital Services Act"
+        role: "Regulatory framework concerning deceptive and manipulative interface practices."
+
+      - name: "California CPRA"
+        role: "Statutory definition of dark patterns in the context of consent."
+
+      - name: "India CCPA dark-pattern enforcement"
+        role: "Indian regulatory enforcement and contemporary examples."
+
+    specialist:
+      - name: "deceptive.design"
+        role: "Living catalogue and vocabulary for deceptive interface patterns."
+        url: "https://deceptive.design/"
+
+  tier_2_funnel:
+    rule: "Every item in this tier is a lead, not a fact, until independently classified."
+
+    - name: "r/darkpatterns"
+      role: "Candidate discovery."
+
+    - name: "r/darkpattern"
+      role: "Candidate discovery."
+
+    - name: "r/dark_patterns"
+      role: "Candidate discovery."
+
+    - name: "r/assholedesign"
+      role: "Boundary testing; high false-positive potential."
+
+    - name: "r/mildlyinfuriating"
+      role: "Low-signal candidate discovery."
+
+    - name: "r/CrappyDesign"
+      role: "Low-signal candidate discovery."
+
+  tier_3_living_research:
+    academic:
+      - name: "arXiv"
+        search_terms:
+          - "deceptive design"
+          - "dark patterns"
+          - "manipulative interface"
+
+      - name: "ACM Digital Library"
+        search_terms:
+          - "dark patterns"
+          - "deceptive design"
+          - "manipulative interfaces"
+
+    regulatory:
+      - name: "FTC"
+      - name: "European Commission"
+      - name: "CNIL"
+      - name: "India PIB / CCPA"
+
+    standing_feed:
+      - name: "deceptive.design reading list"
+        url: "https://deceptive.design/reading-list/"
+
+  source_rule:
+    principle: >
+      Tier 2 establishes that a claim or candidate exists. Authoritative
+      sources establish taxonomy, regulatory context, or documented precedent.
+      The captured interface establishes the observed behavior.

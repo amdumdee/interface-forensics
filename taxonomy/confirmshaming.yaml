@@ -1,0 +1,58 @@
+pattern_type: "Confirmshaming"
+
+taxonomy_lineage: |
+  Brignull's original catalogue provides the historical pattern lineage.
+  Gray et al. provides the higher-level taxonomy used for classification.
+  Regulatory sources are maintained separately for legal and enforcement
+  context; they should not be treated as proof that every instance is
+  legally unlawful.
+
+definition: |
+  An interface attaches guilt, shame, or self-deprecating language to the
+  decline or negative-choice option, creating an emotional cost for rejecting
+  an offer or request. The relevant feature is not persuasion about the offer;
+  it is the loading of the negative choice with an irrelevant self-directed
+  emotional judgment.
+
+is_the_pattern_when:
+  - "The decline option contains self-directed guilt, shame, or disparagement."
+  - "The emotional charge is attached specifically to the negative choice."
+  - "The self-directed judgment is irrelevant to the underlying decision."
+  - "A neutral equivalent could perform the same interface function without the emotional loading."
+
+is_NOT_the_pattern_when:
+  - "The decline text is plain and factual, such as 'No thanks' or 'Not now'."
+  - "The persuasive language concerns the merits of the offer while the decline remains neutral."
+  - "The user merely dislikes the tone, but there is no self-directed emotional loading."
+  - "The interface accurately states a material consequence of declining."
+  - "The negative wording describes a relevant consequence rather than disparaging the user."
+
+social_engineering_mechanism: |
+  The security lens treats confirmshaming as an affective-pressure mechanism:
+  the interface may attempt to shift the user's decision from evaluating the
+  underlying offer toward relieving an uncomfortable feeling about saying no.
+  This is an interpretive security lens, not evidence of organizational
+  intent or proof of downstream security impact.
+
+why_it_qualifies_as_manipulation: |
+  The defining mechanism is an asymmetric emotional cost attached to the
+  negative choice that is not necessary to communicate the decision or its
+  genuine consequences.
+
+counter_check:
+  - "Is the emotional charge specifically attached to the decline?"
+  - "Is the self-directed judgment irrelevant to the actual decision?"
+  - "Can the wording be neutralized without losing a genuine consequence or necessary information?"
+  - "Could the interface instead be ordinary persuasion, factual consequence disclosure, or merely disliked copy?"
+
+confirmation_rule: |
+  Confirm only when the interface satisfies the definition, sufficient
+  evidence exists to inspect or reproduce the behavior, and the counter-check
+  does not leave a material alternative explanation unresolved. Otherwise use
+  candidate-uncertain.
+
+board_level_relevance: |
+  Confirmshaming is useful as a calibration pattern because it is frequent,
+  visually identifiable, and easy to confuse with legitimate persuasion.
+  Security relevance should be expressed as a documented mechanism and
+  potential social-engineering connection, not as an assumed causal effect.
