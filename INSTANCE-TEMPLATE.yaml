@@ -1,0 +1,57 @@
+instance_summary:
+  title: "[Plain description of the observed interface]"
+  entry_date: "YYYY-MM-DD"
+  instance_id: "IF-YYYYMMDD-001"
+  pattern_type: "[Must match a defined pattern-type file]"
+  confidence: "confirmed / candidate-uncertain / rejected"
+
+source:
+  found_via: "[Source, publication, subreddit, direct observation, etc.]"
+  interface: "[Actual product/site/app and specific screen]"
+  url: "[URL or locator]"
+  original_claim: "[What the original source called it, if applicable]"
+
+evidence:
+  screenshot:
+    - "[evidence/screenshots/IF-YYYYMMDD-001/01.png]"
+  recording: null
+  captured_at: "YYYY-MM-DDTHH:MM:SSZ"
+  context:
+    device: "[device]"
+    browser: "[browser]"
+    account_state: "[logged-in / logged-out / unknown]"
+    geography: "[only if materially relevant]"
+  reproduction_steps:
+    - "[Step 1]"
+    - "[Step 2]"
+  exact_interface_text:
+    accept: "[Exact text]"
+    decline: "[Exact text]"
+
+analysis:
+  observed_interface: |
+    [Neutral description of what the interface displays and what happens
+    after each relevant choice.]
+
+  why_it_qualifies: |
+    [Map the observed behavior to specific criteria in the pattern-type file.]
+
+  social_engineering_lens: |
+    [Secondary interpretation of the human lever. Do not use this section
+    to establish the classification.]
+
+counter_check:
+  could_be_legitimate_persuasion: "[yes/no + evidence]"
+  could_be_ordinary_friction: "[yes/no + evidence]"
+  could_be_merely_disliked_design: "[yes/no + evidence]"
+  could_be_contextually_relevant_consequence: "[yes/no + evidence]"
+  verdict: |
+    [Explain the decision and assign confirmed, candidate-uncertain, or rejected.]
+
+board_translation: |
+  [Optional: concise business/security relevance.]
+
+metadata:
+  classifier: "[name or identifier]"
+  taxonomy_source: "[authoritative source supporting the pattern type]"
+  status: "confirmed / candidate-uncertain / rejected"
