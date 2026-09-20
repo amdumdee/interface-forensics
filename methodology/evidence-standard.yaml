@@ -1,0 +1,25 @@
+evidence_standard:
+  version: "0.1"
+
+  mandatory:
+    - "Interface screenshot or recording"
+    - "Source URL or locator"
+    - "Capture timestamp"
+    - "Product/site/app and specific screen"
+    - "Exact relevant interface text"
+    - "Classification against a defined pattern type"
+    - "Why it qualifies"
+    - "Counter-check"
+    - "Status"
+
+  recommended:
+    - "Reproduction steps"
+    - "Browser/device"
+    - "Logged-in/out state"
+    - "Geographic/account context when relevant"
+    - "Multiple screenshots showing before/after state"
+
+  principle: |
+    Evidence describes what was observed. Classification describes which
+    defined pattern the observation matches. Interpretation describes the
+    possible human or security mechanism. These layers should remain distinct.

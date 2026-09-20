@@ -1,0 +1,24 @@
+counter_check:
+  version: "0.1"
+
+  questions:
+    - id: "legitimate_persuasion"
+      question: "Could the observed behavior be ordinary persuasion about the merits of the offer?"
+      requirement: "Explain why the decline wording itself does or does not add an irrelevant pressure."
+
+    - id: "ordinary_friction"
+      question: "Could the observed behavior be ordinary interface friction rather than manipulation?"
+      requirement: "Identify whether friction is merely inconvenient or strategically loaded."
+
+    - id: "disliked_design"
+      question: "Could the classification be based only on subjective dislike of the interface?"
+      requirement: "Remove aesthetic or emotional preference from the analysis."
+
+    - id: "relevant_consequence"
+      question: "Does the negative choice accurately communicate a material consequence?"
+      requirement: "A genuine consequence should not be relabeled as emotional manipulation without further evidence."
+
+  decision:
+    unresolved: "candidate-uncertain"
+    all_resolved_and_definition_met: "confirmed"
+    definition_not_met: "rejected"

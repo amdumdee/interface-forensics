@@ -1,0 +1,45 @@
+classification_rules:
+  version: "0.1"
+
+  evidence_order:
+    - "Observed interface"
+    - "Pattern definition"
+    - "Taxonomy mapping"
+    - "Counter-check"
+    - "Security/social-engineering interpretation"
+
+  prohibited_shortcuts:
+    - "Do not classify from a poster's caption alone."
+    - "Do not classify from a screenshot without understanding the relevant context when context materially changes meaning."
+    - "Do not infer organizational motive when observable behavior is sufficient."
+    - "Do not treat annoyance, inconvenience, or poor aesthetics as proof of manipulation."
+    - "Do not use regulatory status as a substitute for interface-level analysis."
+
+  status_rules:
+    confirmed:
+      requirements:
+        - "Evidence is sufficient to inspect the relevant interface."
+        - "The defined pattern criteria are met."
+        - "Counter-checks are resolved."
+        - "Classification maps to a defined pattern type."
+
+    candidate-uncertain:
+      requirements:
+        - "At least one material classification question remains unresolved."
+
+    rejected:
+      requirements:
+        - "Evidence was reviewed and the defined pattern criteria are not met."
+
+  evidence_quality:
+    minimum:
+      - "Exact interface text where relevant"
+      - "Screenshot or recording"
+      - "Source locator"
+      - "Capture date/time"
+    preferred:
+      - "Reproduction steps"
+      - "Multiple states of the interface"
+      - "Logged-in/logged-out context"
+      - "Device/browser context"
+      - "Geographic or account context when relevant"
